@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vingelis Studio — студия красоты в Москве">
+  <title>Vingelis Studio — студия красоты</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="gold-particles" aria-hidden="true"></canvas>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="logo" href="#hero" aria-label="Vingelis Studio">
+        <span class="logo-mark">V</span>
+        <span class="logo-text">Vingelis <em>Studio</em></span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Основная навигация">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#about">О студии</a></li>
+          <li><a class="nav-link" href="#services">Услуги</a></li>
+          <li><a class="nav-link" href="#portfolio">Портфолио</a></li>
+          <li><a class="nav-link" href="#reviews">Отзывы</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-primary btn-header" href="#appointment">Записаться</a>
+        <button class="burger" id="burgerBtn" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+      <h1 class="hero-title">
+        История одного взгляда
+      </h1>
+
+      <p class="hero-subtitle">
+        Vingelis Studio создаёт естественный и выразительный взгляд:
+        наращивание ресниц, коррекция бровей и перманентный макияж губ
+        в премиальной камерной атмосфере.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#appointment" class="btn btn-primary">Записаться</a>
+        <a href="#services" class="btn btn-secondary">Смотреть услуги</a>
+      </div>
+
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Пн–Пт</span>
+          <span class="hero-meta-value">10:00–18:00</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Сб–Вс</span>
+          <span class="hero-meta-value">Выходной</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Москва</span>
+          <span class="hero-meta-value">Премиум-формат</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual" data-eye-progress>
+      <div class="hero-eye" aria-hidden="true">
+        <img
+          class="eye-layer eye-layer-natural"
+          src="image-1.png"
+          alt=""
+          data-eye-layer="natural"
+        >
+        <img
+          class="eye-layer eye-layer-voluminous"
+          src="image-1.png"
+          alt=""
+          data-eye-layer="voluminous"
+        >
+      </div>
+
+      <div class="hero-caption">
+        <span class="hero-caption-line"></span>
+        <p>От натуральных ресниц к объёмному эффекту</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about reveal" id="about">
+  <div class="container about-inner">
+    <div class="about-media">
+      <figure class="about-image">
+        <img
+          src="image-1.png"
+          alt="Интерьер студии Vingelis Studio"
+          loading="lazy"
+        >
+      </figure>
+    </div>
+
+    <div class="about-content">
+      <p class="eyebrow">О студии</p>
+
+      <h2 class="section-title">
+        Камерное пространство, где рождается выразительный взгляд
+      </h2>
+
+      <p class="section-text">
+        Vingelis Studio — это премиальная студия наращивания ресниц в Москве,
+        где внимание к деталям, стерильность, мягкий сервис и индивидуальный
+        подход становятся основой результата. Мы работаем с натуральными
+        эффектами, классическим объёмом и деликатной коррекцией бровей,
+        сохраняя естественную красоту каждого взгляда.
+      </p>
+
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-value">8+</span>
+          <span class="stat-label">лет в индустрии</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">2 400+</span>
+          <span class="stat-label">клиентов доверяют взгляду</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">30+</span>
+          <span class="stat-label">часов обучения мастеров</span>
+        </div>
+      </div>
+
+      <a href="#appointment" class="btn btn-primary">Записаться на консультацию</a>
+    </div>
+  </div>
+</section>
+
+<section class="services reveal" id="services">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">Услуги</p>
+      <h2 class="section-title">Три направления для идеального взгляда</h2>
+      <p class="section-text">
+        Каждая процедура начинается с консультации и подбора эффекта,
+        который подходит именно вам — по форме глаз, типу ресниц и желаемому образу.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="service-media">
+          <img
+            src="image-1.png"
+            alt="Наращивание ресниц в студии Vingelis Studio"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="service-body">
+          <h3 class="service-title">Наращивание ресниц</h3>
+          <p class="service-text">
+            Классика, 2D–4D, эффект лисички, кукольный или естественный объём.
+            Используем мягкие материалы, подбираем изгиб и длину под форму глаз.
+          </p>
+
+          <ul class="service-list">
+            <li>Классическое наращивание</li>
+            <li>Объём 2D–4D</li>
+            <li>Коррекция и снятие</li>
+          </ul>
+
+          <div class="service-footer">
+            <span class="service-duration">2–3 часа</span>
+            <span class="service-price">от 4 500 ₽</span>
+          </div>
+
+          <a href="#appointment" class="service-link">Записаться</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-media">
+          <img
+            src="image-1.png"
+            alt="Коррекция бровей в студии Vingelis Studio"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="service-body">
+          <h3 class="service-title">Коррекция бровей</h3>
+          <p class="service-text">
+            Архитектура бровей, окрашивание, ламинирование и уход.
+            Создаём аккуратную форму, которая подчёркивает взгляд без перегруза.
+          </p>
+
+          <ul class="service-list">
+            <li>Архитектура и окрашивание</li>
+            <li>Ламинирование бровей</li>
+            <li>Уход и коррекция формы</li>
+          </ul>
+
+          <div class="service-footer">
+            <span class="service-duration">60–90 минут</span>
+            <span class="service-price">от 2 200 ₽</span>
+          </div>
+
+          <a href="#appointment" class="service-link">Записаться</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-media">
+          <img
+            src="image-1.png"
+            alt="Перманентный макияж губ в студии Vingelis Studio"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="service-body">
+          <h3 class="service-title">Перманентный макияж губ</h3>
+          <p class="service-text">
+            Пудровые губы, акварельная техника, коррекция контура и оттенка.
+            Деликатный результат с эффектом здоровых и ухоженных губ.
+          </p>
+
+          <ul class="service-list">
+            <li>Пудровое напыление</li>
+            <li>Акварельная техника</li>
+            <li>Коррекция контура</li>
+          </ul>
+
+          <div class="service-footer">
+            <span class="service-duration">2–3 часа</span>
+            <span class="service-price">от 7 900 ₽</span>
+          </div>
+
+          <a href="#appointment" class="service-link">Записаться</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="steps reveal" id="steps">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">Этапы процедуры</p>
+      <h2 class="section-title">Как проходит визит в Vingelis Studio</h2>
+      <p class="section-text">
+        Мы выстраиваем комфортный процесс: от первой консультации до домашнего ухода,
+        который помогает сохранить результат надолго.
+      </p>
+    </div>
+
+    <ol class="steps-grid">
+      <li class="step-card">
+        <span class="step-number">01</span>
+        <h3 class="step-title">Консультация</h3>
+        <p class="step-text">
+          Обсуждаем желаемый эффект, оцениваем состояние ресниц, кожи и бровей,
+          подбираем безопасный формат процедуры.
+        </p>
+      </li>
+
+      <li class="step-card">
+        <span class="step-number">02</span>
+        <h3 class="step-title">Подбор объёма</h3>
+        <p class="step-text">
+          Выбираем длину, изгиб, толщину и стиль: от натурального эффекта
+          до выразительного объёма для особых случаев.
+        </p>
+      </li>
+
+      <li class="step-card">
+        <span class="step-number">03</span>
+        <h3 class="step-title">Процедура</h3>
+        <p class="step-text">
+          Мастер работает в стерильных условиях, аккуратно и комфортно.
+          Вы отдыхаете, пока взгляд становится совершенным.
+        </p>
+      </li>
+
+      <li class="step-card">
+        <span class="step-number">04</span>
+        <h3 class="step-title">Результат и уход</h3>
+        <p class="step-text">
+          Получаете выразительный взгляд и рекомендации по уходу,
+          которые продлевают носку и сохраняют естественность.
+        </p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="before-after reveal" id="before-after" data-sync-scroll>
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">До / После</p>
+      <h2 class="section-title">Сравните эффект наращивания ресниц</h2>
+      <p class="section-text">
+        Перетащите ползунок или используйте скролл, чтобы увидеть, как меняется взгляд.
+      </p>
+    </div>
+
+    <div class="ba-frame" data-ba>
+      <img
+        class="ba-after"
+        src="image-1.png"
+        alt="После наращивания ресниц"
+        loading="lazy"
+      >
+
+      <div class="ba-before" data-ba-before>
+        <img
+          src="image-1.png"
+          alt="До наращивания ресниц"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="ba-handle" data-ba-handle aria-hidden="true"></div>
+
+      <input
+        type="range"
+        class="ba-range"
+        min="0"
+        max="100"
+        value="50"
+        step="1"
+        aria-label="Ползунок сравнения до и после"
+        data-ba-range
+      >
+
+      <div class="ba-labels" aria-hidden="true">
+        <span>До</span>
+        <span>После</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio reveal" id="portfolio">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">Портфолио</p>
+      <h2 class="section-title">Работы мастеров студии</h2>
+      <p class="section-text">
+        Натуральные, объёмные и акцентные эффекты — каждый образ создаётся
+        индивидуально с учётом формы глаз и пожеланий клиента.
+      </p>
+    </div>
+
+    <div class="portfolio-grid">
+      <figure class="portfolio-item">
+        <img
+          src="image-1.png"
+          alt="Пример наращивания ресниц: естественный эффект"
+          loading="lazy"
+        >
+        <figcaption>Естественный объём</figcaption>
+      </figure>
+
+      <figure class="portfolio-item">
+        <img
+          src="image-1.png"
+          alt="Пример наращивания ресниц: эффект лисички"
+          loading="lazy"
+        >
+        <figcaption>Эффект лисички</figcaption>
+      </figure>
+
+      <figure class="portfolio-item">
+        <img
+          src="image-1.png"
+          alt="Пример наращивания ресниц: классический стиль"
+          loading="lazy"
+        >
+        <figcaption>Классический взгляд</figcaption>
+      </figure>
+
+      <figure class="portfolio-item">
+        <img
+          src="image-1.png"
+          alt="Пример наращивания ресниц: выразительный объём"
+          loading="lazy"
+        >
+        <figcaption>Выразительный объём</figcaption>
+      </figure>
+
+      <figure class="portfolio-item">
+        <img
+          src="image-1.png"
+          alt="Пример коррекции бровей"
+          loading="lazy"
+        >
+        <figcaption>Архитектура бровей</figcaption>
+      </figure>
+
+      <figure class="portfolio-item">
+        <img
+          src="image-1.png"
+          alt="Пример ламинирования ресниц"
+          loading="lazy"
+        >
+        <figcaption>Ламинирование ресниц</figcaption>
+      </figure>
+
+      <figure class="portfolio-item">
+        <img
+          src="image-1.png"
+          alt="Пример перманентного макияжа губ"
+          loading="lazy"
+        >
+        <figcaption>Пудровые губы</figcaption>
+      </figure>
+
+      <figure class="portfolio-item">
+        <img
+          src="image-1.png"
+          alt="Пример наращивания ресниц: кукольный эффект"
+          loading="lazy"
+        >
+        <figcaption>Кукольный эффект</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="reviews reveal" id="reviews">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">Отзывы</p>
+      <h2 class="section-title">Клиенты возвращаются за результатом и атмосферой</h2>
+    </div>
+
+    <div class="reviews-grid">
+      <article class="review-card">
+        <div class="review-rating" aria-label="Оценка 5 из 5">
+          <span aria-hidden="true">★★★★★</span>
+        </div>
+
+        <p class="review-text">
+          Первый раз делала наращивание с таким деликатным эффектом.
+          Ресницы выглядят очень натурально, но взгляд стал заметно выразительнее.
+          В студии красиво, спокойно и приятно находиться.
+        </p>
+
+        <div class="review-author">
+          <span class="review-name">Анна</span>
+          <span class="review-service">Наращивание ресниц</span>
+        </div>
+      </article>
+
+      <article class="review-card">
+        <div class="review-rating" aria-label="Оценка 5 из 5">
+          <span aria-hidden="true">★★★★★</span>
+        </div>
+
+        <p class="review-text">
+          Мастер подробно объяснила, какой объём подойдёт под мои глаза.
+          Процедура прошла комфортно, носка отличная. Теперь только в Vingelis Studio.
+        </p>
+
+        <div class="review-author">
+          <span class="review-name">Мария</span>
+          <span class="review-service">Коррекция бровей</span>
+        </div>
+      </article>
+
+      <article class="review-card">
+        <div class="review-rating" aria-label="Оценка 5 из 5">
+          <span aria-hidden="true">★★★★★</span>
+        </div>
+
+        <p class="review-text">
+          Очень боялась перманента губ, но результат получился мягким и естественным.
+          Оттенок свежий, форма аккуратная. Спасибо за профессионализм и поддержку.
+        </p>
+
+        <div class="review-author">
+          <span class="review-name">Елена</span>
+          <span class="review-service">Перманентный макияж губ</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="appointment reveal" id="appointment">
+  <div class="container appointment-inner">
+    <div class="appointment-info">
+      <p class="eyebrow">Запись</p>
+
+      <h2 class="section-title">Запишитесь на процедуру в Vingelis Studio</h2>
+
+      <p class="section-text">
+        Оставьте заявку — мы свяжемся с вами, подтвердим удобное время
+        и поможем подобрать услугу под желаемый эффект.
+      </p>
+
+      <div class="schedule-card">
+        <h3 class="schedule-title">График работы</h3>
+
+        <ul class="schedule-list">
+          <li>
+            <span class="schedule-day">Понедельник — Пятница</span>
+            <span class="schedule-time">10:00–18:00</span>
+          </li>
+          <li>
+            <span class="schedule-day">Суббота — Воскресенье</span>
+            <span class="schedule-time">Выходной</span>
+          </li>
+        </ul>
+
+        <p class="schedule-note">
+          Запись возможна онлайн или по телефону.
+        </p>
+      </div>
+
+      <div class="contact-mini">
+        <a href="tel:+79990000000" class="contact-link">+7 (999) 000-00-00</a>
+        <span class="contact-divider">·</span>
+        <a href="/cdn-cgi/l/email-protection#98f0fdf4f4f7d8eef1f6fffdf4f1ebb6eaed" class="contact-link"><span class="__cf_email__" data-cfemail="9df5f8f1f1f2ddebf4f3faf8f1f4eeb3efe8">[email&#160;protected]</span></a>
+      </div>
+    </div>
+
+    <form class="appointment-form" action="#" method="post" novalidate>
+      <div class="form-group">
+        <label for="name">Имя</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Как к вам обращаться"
+          autocomplete="name"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Телефон</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="+7 (___) ___-__-__"
+          autocomplete="tel"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="service">Услуга</label>
+        <select id="service" name="service" required>
+          <option value="" selected disabled>Выберите услугу</option>
+          <option value="lashes">Наращивание ресниц</option>
+          <option value="brows">Коррекция бровей</option>
+          <option value="lips">Перманентный макияж губ</option>
+          <option value="consultation">Консультация</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Комментарий</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Желаемый эффект, удобное время, вопросы"
+        ></textarea>
+      </div>
+
+      <label class="consent">
+        <input type="checkbox" name="consent" required>
+        <span>Я согласен на обработку персональных данных</span>
+      </label>
+
+      <button type="submit" class="btn btn-primary btn-submit">
+        Отправить заявку
+      </button>
+
+      <p class="form-note">
+        Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.
+      </p>
+    </form>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer"><div class="container footer-bottom"><p class="copyright">© <span id="currentYear"></span> Vingelis Studio</p></div></footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js" defer></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a44d1ffacc66d2a0',t:'MTc5MTA0Mjg2MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
